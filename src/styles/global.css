@@ -1,0 +1,89 @@
+@import 'colors.css';
+@import 'font.css';
+@import 'layout.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--text-white);
+  margin: 0px 1.2rem;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+input:not([type='submit']) {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: var(--font-size-01);
+  margin-bottom: 1.01rem;
+}
+
+.primary-btn {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--font-size-07);
+  background-color: var(--light-blue);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--rounded-01);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 3rem;
+  font-family: var(--title-font);
+  border-radius: var(--rounded-01);
+  padding: 0px 0.6rem;
+}
+
+input:focus {
+  border: 2px solid var(--light-blue);
+}
+
+button.theme-switcher {
+  display: flex;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--light-blue);
+  color: var(--text-white);
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button.theme-switcher img {
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,30 @@
+.container-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15vw;
+}
+
+.container-left {
+ display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-self: center;
+  padding: 1vh 5vw;
+}
+
+.container-page {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-self: center;
+  padding: 1vh 0px;
+}
+
+:root {
+  --rounded-01: 0.5rem;
+  --rounded-02: 1rem;
+  --rounded-03: 1.5rem;
+  --rounded-04: 2rem;
+}

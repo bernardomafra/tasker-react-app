@@ -1,0 +1,77 @@
+@import 'bottom-tab.css';
+
+body {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+section.empty-state {
+  display: flex;
+  flex-direction: column;
+}
+
+section.empty-state {
+  font-size: var(--font-size-06);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul li {
+  cursor: pointer;
+  transform: scale(0.99);
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--light-blue);
+  padding: 0.5rem;
+  height: 6rem;
+  overflow: hidden;
+  border-radius: var(--rounded-01);
+}
+
+ul li:hover {
+  transition: 0.2s;
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+ul li:active,
+ul li:focus,
+.selected {
+  transition: 0.2s;
+  transform: scale(1);
+  opacity: 0.9;
+  border: 2px solid var(--text-white);
+}
+
+ul li:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+ul li section {
+  width: 85%;
+  word-wrap: break-word;
+}
+
+ul li section h2 {
+  text-transform: uppercase;
+  margin: 0px;
+  font-family: var(--font-title);
+  font-size: var(--font-size-06);
+}
+
+ul li section p {
+  margin: 0.2rem 0px;
+  font-size: var(--font-size-07);
+  word-wrap: break-word;
+}
+
+ul li aside {
+  font-family: var(--font-title);
+  font-size: var(--font-size-03);
+  padding: 0px 1rem;
+}

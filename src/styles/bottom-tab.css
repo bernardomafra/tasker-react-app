@@ -1,0 +1,107 @@
+.bottom-tab {
+  user-select: none;
+  
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top-left-radius: var(--rounded-01);
+  border-top-right-radius: var(--rounded-01);
+  height: 2rem;
+
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 0px;
+  width: calc(91vw);
+
+  transition: 0.2s;
+}
+
+.bottom-tab::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: lightgray;
+  height: 0.5rem;
+  width: 5rem;
+  top: 10px;
+  border-radius: var(--rounded-01);
+}
+
+.bottom-tab.open {
+  height: auto;
+  padding: 1.5rem;
+}
+
+.bottom-tab.open button.tab {
+  align-self: center;
+  background: var(--light-blue);
+  border: none;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border-radius: var(--rounded-01);
+  box-shadow: 0px 0px 15px -3px var(--dark-blue);
+}
+
+.bottom-tab.open button.tab:active {
+  box-shadow: 0px 0px 15px -3px var(--light-blue);
+}
+
+.bottom-tab.open button.tab img {
+  pointer-events: none;
+}
+
+.bottom-tab > * {
+  display: none;
+}
+
+.bottom-tab.open div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-tab.open div#buttons {
+  justify-content: space-evenly;
+}
+
+.bottom-tab.open div#warning {
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottom-tab.open div#warning header,
+h4 {
+  margin-bottom: 0px;
+}
+
+.bottom-tab.open div#warning footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bottom-tab.open div#warning footer button {
+  width: 40%;
+  margin: 0px;
+}
+
+.bottom-tab.open div#warning footer button:last-of-type {
+  background: var(--light-red);
+}
+
+.bottom-tab.open div#warning h4 {
+  font-family: var(--font-title);
+  font-size: var(--font-size-02);
+  color: var(--dark-blue);
+  text-transform: uppercase;
+}
+
+.bottom-tab.open div#warning p {
+  font-size: var(--font-size-06);
+  color: var(--dark-blue);
+  text-align: center;
+  margin: 2rem 0px;
+}

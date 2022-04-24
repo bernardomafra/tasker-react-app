@@ -1,0 +1,35 @@
+:root {
+  --darker-blue: #2a3d45;
+  --dark-blue: #26404d;
+  --light-blue: #289dd2;
+  --dark-green: #55846c;
+  --light-green: #5dab83;
+  --text-white: #f7f7f7;
+  --dark-red: #e82929;
+  --light-red: #ed5045;
+}
+
+/* Light Theme Style */
+html[data-theme='light'] {
+  --darker-blue: #2a3d45;
+  --dark-blue: #ffffff;
+  --light-blue: #2a3d45;
+  --dark-green: #55846c;
+  --light-green: #5dab83;
+  --text-white: #289dd2;
+  --dark-red: #e82929;
+  --light-red: #ed5045;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --darker-blue: #2a3d45;
+    --dark-blue: #26404d;
+    --light-blue: #289dd2;
+    --dark-green: #55846c;
+    --light-green: #5dab83;
+    --text-white: #f7f7f7;
+    --dark-red: #e82929;
+    --light-red: #ed5045;
+  }
+}
