@@ -1,5 +1,5 @@
 <p align="center">  
-  <img width="260px" src="assets/logo-no-subtitle.png">
+  <img width="260px" src="public/assets/logo-no-subtitle.png">
   <h1 align="center"></h1>
 </p>
 
@@ -155,7 +155,7 @@
 ✅  A aplicação está funcionando corretamente? <code><b>Sim</b></code>
 
   
-  <img src="/assets/logo-only.png" width="40px" /> <a href="https://tasker-react-app.bernardomafra.repl.co" target="_blank">Você pode acessá-la clicando aqui</a>
+  <img src="public/assets/logo-only.png" width="40px" /> <a href="https://tasker-react-app.bernardomafra.repl.co" target="_blank">Você pode acessá-la clicando aqui</a>
     
   
 ✅  A aplicação está completa? <code><b>Sim</b></code>
